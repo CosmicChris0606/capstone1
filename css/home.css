@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 html {
     height: 100%;
+    width: 100vw;
 }
-
 
 body{
     height: 100%;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image:linear-gradient(rgb(45, 2, 74), rgba(11, 4, 78, 0.786));
-    background-repeat: no-repeat;
-    
-    
-   
+    /*add jpg image to background?*/
+    background-image:linear-gradient(rgb(0, 0, 0), rgb(4, 19, 157));
+    background-repeat: no-repeat; 
 }
-
+    
 
 li, a{
     font-family: "Montserrat", monospace, sans-serif;
@@ -70,12 +69,15 @@ button{
     margin-left: 20px;
     border-radius: 50px;
     font-weight: 700;
-
     cursor: pointer;
     transition:all 0.3s ease 0s;
 }
 
 button:hover{
-    background-color: black;
-    color: white;
+    background-color: rgb(76, 6, 206);
+    color: rgb(255, 255, 255);
+}
+
+span{
+    color:rgb(76, 6, 206);
 }
