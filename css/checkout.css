@@ -6,15 +6,12 @@
 
 }
 
-html, body {
-    width: 100%;
-    height:100%;
-  }
   
   body {
       background: linear-gradient(-45deg, #070200, rgb(76, 6, 206), #080cd5, #be0404);
       background-size: 400% 400%;
       animation: gradient 20s ease infinite;
+      display: flex;
   }
   
   @keyframes gradient {
@@ -39,12 +36,13 @@ html, body {
 
 .main .card{
     width: 60rem;
-    margin: auto;
-    background: rgb(12, 9, 9);
-    color: rgb(250, 249, 249);
+    margin: 2rem;
+    background:black;
+    color: rgb(8, 0, 10);
+
     position: center;
     align-self: center;
-    top: 50rem;
+    top: 50em;
     border-radius: 1.5rem;
     box-shadow: 4px 3px 20px;
     display: flex;
@@ -52,19 +50,73 @@ html, body {
 }
 
 .main .leftside { 
-    background: black;
+    background: rgb(243, 243, 243);
     width: 25rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem ;
+    border-bottom-left-radius: 1.5rem;
 }
 
 .product{
     object-fit: cover;
-    width: 20rem;
+    width: 20em;
     height: 20em;
     border-radius:100%;
 }
 
+.rightside{
+    background-color:rgb(250, 248, 248);
+    color: black;
+    width:35rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 1rem 2rem 3rem 3rem; 
+}
+
+p{
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+.inputbox{
+    color: rgb(9, 6, 0);
+    width:100%;
+    padding: 0.5rem;
+    border:none;
+    border-bottom: 1.5px solid purple;
+    margin-bottom: 1rem;
+    color:rgb(2, 2, 2);
+    font-size: 1.1rem;
+    font-weight: 500;
+    outline: none;
+}
+
+.button{
+    background: linear-gradient(135deg, purple 0, blue 100%);
+    color:white;
+    padding: 15px;
+    border:none;
+    border-radius: 50px; ;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width: 100%;
+    letter-spacing: .11rem;
+    outline: none;
+}
+
+.button:hover{
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 4px 4px 8px green;
+    transition: .5s;
+}
+
+#CO{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}

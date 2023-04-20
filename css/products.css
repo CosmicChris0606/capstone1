@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:monospace, Arial, sans-serif;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.product-image {
+    flex: 0 0 400px;
+    margin-right: 20px;
+}
+
+.product-image img {
+    max-width: 100%;
+}
+
+.product-details {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-details h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 18;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg , #ffffff, rgb(255, 255, 255), #fdfdfe, #b779f4);
+    background-size: 400% 400%;
+    
+    animation: gradient 20s ease infinite;
+
+}
+
+button{
+    background: linear-gradient(135deg, purple 0, blue 100%);
+    color:white;
+    padding: 15px;
+    border:none;
+    border-radius: 50px; ;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width: 100%;
+    letter-spacing: .11rem;
+    outline: none;
+}
+
+button:hover{
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 4px 4px 8px green;
+    transition: .5s;
+}
+

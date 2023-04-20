@@ -4,12 +4,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="css/checkout.css">
+    
     <Title>Checkout</Title>
 </head>
 
-
+<header>
+    <nav>
+        <div class="logo">
+          <a href="">Cosmic Gaming</a>
+        </div>
+        <label for="menu-toggle">&#9776;</label>
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
 <body>
+
+
     <div class="main">
         <div class="card">
             <div class="leftside">
@@ -17,7 +33,7 @@
             </div>
             <div class="rightside">
                 <form action="">
-                    <h1>Check Out</h1>
+                    <h1 id="CO">Check Out</h1>
                     <h2>Payment Information</h2>
                     <p>Cardholder Name</p>
                     <input type="text" class="inputbox">
@@ -32,12 +48,12 @@
                         <option value="">MasterCard</option>
                     </select>
 
-                    <div class="expccvv">
-                        <p>Expiry</p>
-                        <input type="number" class="inputbox">
+                    <div class="expcvv">
+                        <p class="expcvv_text">Expiry</p>
+                        <input type="date" class="inputbox">
 
-                        <p>CVV</p>
-                        <input type="number" class="inputbox">
+                        <p class="expcvv_text2">CVV<CVV</p>
+                                <input type="number" class="inputbox">
                     </div>
                     <button class="button">Checkout</button>
                 </form>
@@ -45,5 +61,3 @@
         </div>
     </div>
 </body>
-
-
