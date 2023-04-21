@@ -7,13 +7,27 @@
     font-family:monospace, Arial, sans-serif;
 }
 
-body{
-    background-image: url("../images/infiniteloop.gif");
-    background-repeat: no-repeat;
-   background-size: cover;
+body {
+    background: linear-gradient(-45deg, #059f21, rgb(76, 6, 206), #030e2a, #d00606);
+    background-size: 400% 400%;
     
+    animation: gradient 20s ease infinite;
+
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 main {
     max-width: 1200px;

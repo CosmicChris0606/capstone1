@@ -1,21 +1,11 @@
-body {
-    background: linear-gradient(-45deg, #070200, rgb(76, 6, 206), #080cd5, #be0404);
-    background-size: 400% 400%;
-    
-    animation: gradient 20s ease infinite;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
+body{
+    background-image: url(../images/infiniteloop.gif);
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;  
+    font-family: monospace, Arial, Helvetica, sans-serif; 
 }
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
+ 

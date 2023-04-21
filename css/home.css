@@ -1,62 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
-*{
+* {
     justify-content: center;
     align-items: center;
     padding: 0.8em;
-}
-html {
-    height: 100%;
-    width: 100vw;
+
 }
 
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-    color: white;
-}
-
-
-
-
-
-button {
-    padding: 9px 25px;
-    background-color: rgba(rgb(255, 0, 221), rgb(128, 0, 107), rgb(255, 0, 212), 1);
-    border: none;
-    margin-left: 20px;
-    border-radius: 50px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: rgb(76, 6, 206);
-    color: rgb(255, 255, 255);
-}
 
 
 body {
-    background: linear-gradient(-45deg, #070200, rgb(76, 6, 206), #080cd5, #be0404);
-    background-size: 400% 400%;
-    animation: gradient 20s ease infinite;
-    display: flex;
-}
+    background-image: url(../images/Sun.gif);
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    background-repeat: none;
+    font-family: monospace, Arial, Helvetica, sans-serif;
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 }

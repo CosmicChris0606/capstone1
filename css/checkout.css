@@ -7,7 +7,7 @@
 }
 
   
-  body {
+body {
       background: linear-gradient(-45deg, #070200, rgb(76, 6, 206), #080cd5, #be0404);
       background-size: 400% 400%;
       animation: gradient 20s ease infinite;
@@ -50,7 +50,7 @@
 }
 
 .main .leftside { 
-    background: rgb(243, 243, 243);
+    background: rgb(255, 255, 255);
     width: 25rem;
     display: inline-flex;
     align-items: center;
