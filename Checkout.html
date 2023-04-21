@@ -4,24 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="css/checkout.css">
-    
+    <link rel="stylesheet" href="css/site.css">
     <Title>Checkout</Title>
 </head>
 
 <header>
-    <nav>
-        <div class="logo">
-          <a href="">Cosmic Gaming</a>
-        </div>
-        <label for="menu-toggle">&#9776;</label>
-        <ul class="menu">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="Products.html">Products</a></li>
-          <li><a href="about.html">About Us</a></li>
-        </ul>
-      </nav>
+    <header>
+        <nav class="chrisnav">
+            <div class="logo">
+                <a href="#">Cosmic Gaming</a>
+            </div>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
     </header>
 <body>
 
@@ -29,20 +28,76 @@
     <div class="main">
         <div class="card">
             <div class="leftside">
-                <img src="/images/cont.jpg" alt="productimage">
+
+<!--Checkout table-->
+                <table>
+                  
+                    <tbody>
+                        <thead>
+                            <th></th>
+                            <th></th>
+                            <th>Qty</th>
+                            <th></th>
+                            <th>Sub</th>
+                        </thead>
+                      <tr>
+                        <td><img src="images/Xboxblackcont2.jpg" alt="Product A"></td>
+                        <td>Standard Xbox Controller-Venom</td>
+                        <td>2</td>
+                        <td></td>
+                        <td>$1,000,000</td>
+                        
+                      </tr>
+                      <tr>
+                        <td><img src="images/images2.jpg" alt="Product A"></td>
+                        <td>Carnage</td>
+                        <td>2</td>
+                        <td></td>
+                        <td>$1,000,000</td>
+                        
+                      </tr>
+                      <tr>
+                        <td><img src="images/mouse2.jpg" alt="Product A"></td>
+                        <td>The "Spyder"</td>
+                        <td>2</td>
+                        <td></td>
+                        <td>$1,000,000</td>
+                        
+                      </tr>
+                      <tr>
+                        <td colspan="4">Subtotal</td>
+                        <td>$3,000,000</td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">Shipping</td>
+                        <td>$0.50</td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">Tax</td>
+                        <td>$0.50</td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">Total</td>
+                        <td>$3,000,001</td>
+                      </tr>
+                    </tbody>
+                  </table>
             </div>
+            
+            
+<!--Payment Info-->           
             <div class="rightside">
                 <form action="">
                     <h1 id="CO">Check Out</h1>
                     <h2>Payment Information</h2>
                     <p>Cardholder Name</p>
-                    <input type="text" class="inputbox">
+                    <input type="text" class="inputbox" required>
 
                     <p>Card Number</p>
-                    <input type="number" class="inputbox">
+                    <input type="number" class="inputbox" required>
 
                     <p>Card Type</p>
-                    <select name="CardSelect" id="CardSelect" class="inputbox">
+                    <select name="CardSelect" id="CardSelect" class="inputbox" required>
                         <option value="">Select Card Type</option>
                         <option value="">Visa</option>
                         <option value="">MasterCard</option>
@@ -50,10 +105,10 @@
 
                     <div class="expcvv">
                         <p class="expcvv_text">Expiry</p>
-                        <input type="date" class="inputbox">
+                        <input type="date" class="inputbox" required>
 
                         <p class="expcvv_text2">CVV<CVV</p>
-                                <input type="number" class="inputbox">
+                                <input type="number" class="inputbox" required>
                     </div>
                     <button class="button">Checkout</button>
                 </form>

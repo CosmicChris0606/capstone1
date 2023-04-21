@@ -1,105 +1,179 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/products.css">
-  </head>
-  
-  <body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
     <header>
-      <nav class="chrisnav">
-        <div class="logo">
-          <a href="#">Cosmic Gaming</a>
-        </div>
-        <ul class="menu">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="Products.html">Products</a></li>
-          <li><a href="about.html">About Us</a></li>
-        </ul>
-      </nav>
+        <nav class="chrisnav">
+            <div class="logo">
+                <a href="#">Cosmic Gaming</a>
+            </div>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <main>
-      <div class="product-container">
-        <div class="product-image">
-          <img src="images/mouse.jpg" alt="Product Image">
+
+
+
+    <main class="container">
+
+        <!--Products 1 and 2-->
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <img class="card-img-top" src="images/mouse.jpg" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="d-sm-flex justify-content-sm-center">The"Spyder"</h5>
+                        <p class="price text-center">$1,000,000</p>
+                        <p class="card-text">Why settle for a normal mouse when you can have a mouse that's basically a
+                            spaceship? With more buttons and features than you could ever need, this mouse will have you
+                            feeling like a NASA engineer. And if you're not careful, you might accidentally launch
+                            yourself into orbit. Embrace the complexity of a mouse that's so technological, you'll need
+                            a degree in rocket science just to use it.</p>
+                        <div class="text-center">
+                            <a href="Checkout.html" class="button" s>Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <img src="images/images.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="d-sm-flex justify-content-sm-center">Carnage</h5>
+                        <p class="card-text">Why waste money on those fancy gaming mice when your trusty normal mouse is
+                            so good it can read your inputs telepathically? Experience the ultimate in gaming precision
+                            with a mouse that's so basic, it's practically psychic. And forget about all those
+                            unnecessary buttons and features – your trusty normal mouse knows what you want before you
+                            even do.</p>
+                        <div class="text-center">
+                            <a href="Checkout.html" class="button" s>Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="product-details">
-          <h1>The Spyder</h1>
-          <p class="product-price">$1,000,000</p>
-          <p class="product-description">Why settle for a normal mouse when you can have a mouse that's basically a spaceship? With more buttons and features than you could ever need, this mouse will have you feeling like a NASA engineer. And if you're not careful, you might accidentally launch yourself into orbit. Embrace the complexity of a mouse that's so technological, you'll need a degree in rocket science just to use it.</p>
-          <button class="addcart">Add to Cart</button>
+
+        <!--Products 3 and 4-->
+
+        <div class="row g-4 mt-2">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <img src="images/Xboxblackcont.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="d-sm-flex justify-content-sm-center">Standard Xbox Controller-Venom</h5>
+                        <p class="card-text">Why bother with those expensive newfangled controllers when you can use the
+                            Xbox One controller? Experience the joys of gaming with a controller that's basically just a
+                            chunky brick with some buttons on it. The controller's plain design will make you feel like
+                            a pro gamer from the 90s, while the lack of any fancy features will ensure that you don't
+                            get distracted from the gameplay. Embrace the simplicity of a controller that's so basic,
+                            it's practically retro.</p>
+                        <div class="text-center">
+                            <a href="Checkout.html" class="button" s>Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <img src="images/ps5 controller.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="d-sm-flex justify-content-sm-center">Standard ps5 Controller-White</h5>
+                        <p class="card-text">Who needs fancy gaming headphones when you have the standard PS5
+                            controller? Hear every in-game sound through your TV speakers while your family complains
+                            about the noise. The symmetrical design will ensure that your thumbs get an equal workout,
+                            while the built-in microphone will let you hear the sweet sound of your own voice through
+                            the TV speakers. Forget about comfort or style – embrace the beauty of the plain,
+                            old-fashioned controller..</p>
+                        <div class="text-center">
+                            <a href="Checkout.html" class="button" s>Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="product-container">
-          <div class="product-image">
-            <img src="images/images.jpg" alt="Product Image">
-          </div>
-          <div class="product-details">
-            <h1>Carnage</h1>
-            <p class="product-price">$1,000,000</p>
-            <p class="product-description">Why waste money on those fancy gaming mice when your trusty normal mouse is so good it can read your inputs telepathically? Experience the ultimate in gaming precision with a mouse that's so basic, it's practically psychic. And forget about all those unnecessary buttons and features – your trusty normal mouse knows what you want before you even do.</p>
-            <button class="addcart">Add to Cart</button>
-          </div>
-      <div class="product-container">
-        <div class="product-image">
-          <img src="images/Xboxblackcont.jpg" alt="Product Image">
         </div>
-        <div class="product-details">
-          <h1>Standard Xbox Controller-Black</h1>
-          <p class="product-price">$1,000,000</p>
-          <p class="product-description">Why bother with those expensive newfangled controllers when you can use the Xbox One controller? Experience the joys of gaming with a controller that's basically just a chunky brick with some buttons on it. The controller's plain design will make you feel like a pro gamer from the 90s, while the lack of any fancy features will ensure that you don't get distracted from the gameplay. Embrace the simplicity of a controller that's so basic, it's practically retro.</p>
-          <button class="addcart">Add to Cart</button>
+
+        <!--Products 5 and 6-->
+
+        <div class="row g-4 mt-2">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <img src="images/Headphones2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="d-sm-flex justify-content-sm-center">The Boom Tube</h5>
+                        <p class="card-text">Elevate your gaming experience with these high-quality headphones designed
+                            for serious gamers. With their superior sound quality, you'll never miss a beat and always
+                            stay one step ahead of the competition. The built-in microphone ensures clear communication
+                            with your teammates, while the ergonomic design provides maximum comfort during even the
+                            longest gaming sessions. Plus, the sleek and stylish design will make you stand out in any
+                            gaming community. Whether you're playing on a console or a PC, these headphones are a
+                            must-have accessory for any serious gamer.</p>
+                        <div class="text-center">
+                            <a href="Checkout.html" class="button" s>Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <img src="images/Headphones.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="d-sm-flex justify-content-sm-center">Warp Drive</h5>
+                        <p class="card-text">Experience gaming like never before with these top-notch headphones
+                            designed specifically for gamers. Enjoy crystal-clear sound quality, advanced
+                            noise-cancellation technology, and a comfortable over-ear design that allows you to game for
+                            hours without any discomfort. Whether you're a professional gamer or just looking to enhance
+                            your gaming experience, these headphones are the perfect choice.</p>
+                        <div class="text-center">
+                            <a href="Checkout.html" class="button" s>Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      <div class="product-container">
-        <div class="product-image">
-          <img src="images/ps5 controller.jpg" alt="Product Image">
         </div>
-        <div class="product-details">
-          <h1>Standard ps5 Controller-White</h1>
-          <p class="product-price">$1,000,000</p>
-          <p class="product-description">Who needs fancy gaming headphones when you have the standard PS5 controller? Hear every in-game sound through your TV speakers while your family complains about the noise. The symmetrical design will ensure that your thumbs get an equal workout, while the built-in microphone will let you hear the sweet sound of your own voice through the TV speakers. Forget about comfort or style – embrace the beauty of the plain, old-fashioned controller.</p>
-          <button class="addcart">Add to Cart</button>
+        <!--Product 7. Gave it its own row for funsies-->
+
+        <div class="row g-4 mt-2">
+            <div class="col-md-12">
+                <div class="card h-100">
+                    <img src="images/RGBMousepad.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="d-sm-flex justify-content-sm-center">Black Hole</h5>
+                        <p class="card-text">Why bother with those overpriced gaming pads when this simple RGB gaming
+                            pad is the best in the market for no reason? With its basic design and minimal features,
+                            you'll wonder why you ever wasted money on anything else. And the RGB lighting? Purely for
+                            aesthetics – but boy does it look pretty. Embrace the absurdity of a product that's so
+                            basic, it's actually kind of impressive.</p>
+                        <div class="text-center">
+                            <a href="Checkout.html" class="button" s>Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-     
-      <div class="product-container">
-        <div class="product-image">
-          <img src="images/Headphones2.jpg" alt="Product Image">
         </div>
-        <div class="product-details">
-          <h1>The Boom Tube</h1>
-          <p class="product-price">$1,000,000</p>
-          <p class="product-description">Elevate your gaming experience with these high-quality headphones designed for serious gamers. With their superior sound quality, you'll never miss a beat and always stay one step ahead of the competition. The built-in microphone ensures clear communication with your teammates, while the ergonomic design provides maximum comfort during even the longest gaming sessions. Plus, the sleek and stylish design will make you stand out in any gaming community. Whether you're playing on a console or a PC, these headphones are a must-have accessory for any serious gamer.</p>
-          </p>
-          <button class="addcart">Add to Cart</button>
-        </div>
-      <div class="product-container">
-        <div class="product-image">
-          <img src="images/Headphones.jpg" alt="Product Image">
-        </div>
-        <div class="product-details">
-          <h1>Warp Drive</h1>
-          <p class="product-price">$1,000,000</p>
-          <p class="product-description">Experience gaming like never before with these top-notch headphones designed specifically for gamers. Enjoy crystal-clear sound quality, advanced noise-cancellation technology, and a comfortable over-ear design that allows you to game for hours without any discomfort. Whether you're a professional gamer or just looking to enhance your gaming experience, these headphones are the perfect choice.</p>
-          <button class="addcart">Add to Cart</button>
-        </div>
-      <div class="product-container">
-        <div class="product-image">
-          <img src="images/RGBMousepad.jpg" alt="Product Image">
-        </div>
-        <div class="product-details">
-          <h1>Black Hole</h1>
-          <p class="product-price">$1,000,000</p>
-          <p class="product-description">Why bother with those overpriced gaming pads when this simple RGB gaming pad is the best in the market for no reason? With its basic design and minimal features, you'll wonder why you ever wasted money on anything else. And the RGB lighting? Purely for aesthetics – but boy does it look pretty. Embrace the absurdity of a product that's so basic, it's actually kind of impressive.</p>
-          <button class="addcart">Add to Cart</button>
-        </div>
- 
-      </div>
+
+
     </main>
-    <footer>
-      <p>&copy; 2023 Cosmic Gaming. All rights reserved.</p>
-    </footer>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
 </html>
