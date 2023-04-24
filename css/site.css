@@ -11,7 +11,7 @@ body {
     background: linear-gradient(-45deg, #059f21, rgb(76, 6, 206), #030e2a, #d00606);
     background-size: 400% 400%;
     
-    animation: gradient 20s ease infinite;
+    animation: gradient 10s ease infinite;
 
 }
 
@@ -35,6 +35,10 @@ main {
     padding: 20px;
 }
 
+.logo a {
+    font-size: 24px;
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -46,9 +50,7 @@ header {
     z-index: 2;
 }
 
-.logo a {
-    font-size: 24px;
-}
+/*z-index fix is cool*/
 
 nav.chrisnav {
     display: flex;
